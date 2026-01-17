@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, Phone, Clock, Mail, Instagram, Facebook } from "lucide-react";
+import { MapPin, Phone, Clock, Mail, Instagram, Facebook, Calendar } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -102,6 +102,16 @@ export const Contact = () => {
             transition={{ duration: 0.8 }}
             className="bg-card border border-border rounded p-8"
           >
+            {/* Navi360 Logo */}
+            <div className="flex items-center justify-center gap-3 mb-8 pb-6 border-b border-border">
+              <div className="w-12 h-12 bg-gradient-gold rounded-lg flex items-center justify-center">
+                <Calendar className="w-6 h-6 text-primary-foreground" />
+              </div>
+              <span className="font-display text-2xl font-semibold text-foreground">
+                Navi<span className="text-gold">360</span>
+              </span>
+            </div>
+
             <form className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
